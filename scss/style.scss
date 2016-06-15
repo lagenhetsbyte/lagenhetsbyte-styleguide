@@ -1,50 +1,13 @@
 @import 
-    'typography',
     'colors',
+    'global',
+    'components',
+    'typography',
     'buttons',
     'helpers';
 
-* {
-    box-sizing: border-box;
-}
-body { 
-    background: $alto-grey;
-    color: $mine-shaft-black;
-    margin: 0;
-}
-li { 
-    line-height: 140% 
-}
-code { 
-    background: $alto-grey;
-    padding: 0.15rem 0.35rem;
-}
-
-nav {
-    background: #fff;
-    float: left;
-    line-height: 140%;
-    margin-right: 5%;
-    padding: 1rem;
-    width: 20%;
-    a:after {
-        content: '';
-        display: table;
-    }
-}
-
-.main {
-    background: #fff;
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-    padding: 1.2rem 1.5rem 1.5rem 1.5rem;
-}
-.panel { 
-    @extend .main;
-    background: $lemon-chiffon-yellow; 
-    margin-top: 1rem;
-    padding: 1.5rem 1.5rem 0.6rem 1.5rem;
+ol, ul, li { 
+    line-height: 150%;
 }
 
 .color-block {

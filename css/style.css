@@ -1,25 +1,62 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
-body {
-  font-family: 'Droid Sans'; }
-
-h1 {
-  margin: 0;
-  letter-spacing: -0.3px; }
-
-h2, h3 {
-  margin: 0;
-  letter-spacing: -0.2px; }
-
-p {
-  line-height: 135%; }
-
 /* --- Chirag Color Name Convention --- */
 /* Greys */
 /* Blues */
 /* Greens */
 /* Reds Yellows */
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 a:link, a:visited {
   color: #2196d8; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #ddd;
+  color: #222;
+  margin: 0; }
+
+code {
+  background: #ddd;
+  padding: 0.15rem 0.35rem; }
+
+nav {
+  background: #fff;
+  float: left;
+  line-height: 140%;
+  margin-right: 5%;
+  padding: 1rem;
+  width: 20%; }
+  nav a {
+    text-decoration: none; }
+  nav a:hover {
+    border-bottom: 1px solid #777; }
+  nav a:after {
+    content: '';
+    display: table; }
+
+.main {
+  background: #fff;
+  float: left;
+  width: 50%;
+  padding: 1.2rem 1.5rem 1.5rem 1.5rem; }
+
+.panel {
+  background: #fff8b8;
+  padding: 1.5rem 1.5rem 0.6rem 1.5rem; }
+  .panel h1, .panel h2, .panel h3 {
+    font-size: 1.3rem;
+    margin-top: 0; }
+  .panel p {
+    font-size: .9rem; }
+
+body {
+  font-family: 'Droid Sans'; }
+
+p {
+  line-height: 135%; }
+
+strong {
+  font-weight: 700; }
 
 .button {
   -webkit-appearance: none;
@@ -108,43 +145,8 @@ a:link, a:visited {
 .mt8 {
   margin-top: 2rem; }
 
-* {
-  box-sizing: border-box; }
-
-body {
-  background: #ddd;
-  color: #222;
-  margin: 0; }
-
-li {
-  line-height: 140%; }
-
-code {
-  background: #ddd;
-  padding: 0.15rem 0.35rem; }
-
-nav {
-  background: #fff;
-  float: left;
-  line-height: 140%;
-  margin-right: 5%;
-  padding: 1rem;
-  width: 20%; }
-  nav a:after {
-    content: '';
-    display: table; }
-
-.main, .panel {
-  background: #fff;
-  box-sizing: border-box;
-  float: left;
-  width: 50%;
-  padding: 1.2rem 1.5rem 1.5rem 1.5rem; }
-
-.panel {
-  background: #fff9c4;
-  margin-top: 1rem;
-  padding: 1.5rem 1.5rem 0.6rem 1.5rem; }
+ol, ul, li {
+  line-height: 150%; }
 
 .color-block {
   float: left;

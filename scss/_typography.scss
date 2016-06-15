@@ -1,16 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 
 body { 
     font-family: 'Droid Sans';
 }
-h1 { 
-    margin: 0; 
-    letter-spacing: -0.3px;
-}
-h2, h3 { 
-    margin: 0; 
-    letter-spacing: -0.2px;
-}
 p { 
     line-height: 135% 
+}
+strong {
+    font-weight: 700;
 }

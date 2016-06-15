@@ -1,0 +1,81 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <nav id="nav"></nav>
+
+    <div class="main">
+
+        <h1>Syntax and Format</h1>
+        <p>
+            Sass preprocessor, bla bla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sit distinctio possimus dignissimos accusamus aspernatur cum illum asperiores eos expedita consequuntur, quis suscipit quos quam.
+        </p>
+
+        <h2>Example</h2>
+        <p>
+            Please find below an example styling snippet.
+        </p>
+
+<pre><code class="code-block">
+        .class {
+    background: $color;
+    font-family: $font;
+    line-height: 140%;
+    margin: 5%;
+    padding: 1rem;
+    width: (100% / 3);
+}
+        </code></pre>
+
+        <h2>Do:</h2>
+        <ul>
+            <li>Place css declarations in alphabetical order. This is to easily find what you are looking for, and to eliminate the risk of duplication.</li>
+            <li>Use so called ”egyptian brackets”.</li>
+            <li>Indent by 4 spaces.</li>
+        </ul>
+
+        <h2>Nesting</h2>
+        <p>
+            Nesting is a expensive operation. Always try to find a direct selector. 
+            <code>.some-list__item</code> is always to prefer instead of <code>.some-list > div + ul li</code>.
+        </p>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <script type="text/javascript" src="js/loadMenu.js"></script>
+    <script type="text/javascript">
+    var colorBlocks = document.getElementsByClassName('js-color-block');
+
+    function hexToRgb(hex) {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : null;
+    }
+
+    for (var i = 0; i < colorBlocks.length; i++) {
+        var hexColor = colorBlocks[i].innerHTML;
+
+        colorBlocks[i].style.background = hexColor;
+        var clr = hexToRgb(hexColor);
+
+        var rgbAvg = (clr.r + clr.g + clr.b) / 3;
+        var limit = 150;
+
+        if (rgbAvg < limit) {
+            colorBlocks[i].classList.add('color-block--invert');
+        }
+    };
+
+    </script>
+
+</body>
+</html>

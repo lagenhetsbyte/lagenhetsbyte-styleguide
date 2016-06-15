@@ -19,6 +19,9 @@ code {
   background: #ddd;
   padding: 0.15rem 0.35rem; }
 
+pre {
+  word-wrap: normal; }
+
 nav {
   background: #fff;
   float: left;
@@ -33,6 +36,8 @@ nav {
   nav a:after {
     content: '';
     display: table; }
+  nav h1, nav h2, nav h3 {
+    font-size: 1.2rem; }
 
 .main {
   background: #fff;

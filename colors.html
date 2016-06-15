@@ -1,0 +1,112 @@
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div id="nav"></div>
+
+    <div class="main">
+
+        <h1>Colors</h1>
+        <p>
+            Please find below our color palette.
+        </p>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#222222</div>
+            <p class="color-description">
+                Objects are never ever 100% black (#000). 
+                The default text color is #222. We call it <code>$mine-shaft-black</code>.
+            </p>
+        </div>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#e2f4fc</div>
+            <p class="color-description">
+                This light blue is used as a general background color for 
+                e.g. in menus and panels. We call it <code>$foam-blue</code>. 
+                The related hover color and selected color is <code>$tropical-blue</code>.
+            </p>
+        </div>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#2196d8</div>
+            <p class="color-description">
+                This medium blue is used for several elements: link color, logo color 
+                and default button color. We call it <code>$curious-blue</code>.
+            </p>
+        </div>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#66bb6a</div>
+            <p class="color-description">
+                This green is used for buttons with primary actions.
+                We call it <code>$fern-green</code>.
+            </p>
+        </div>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#ea4335</div>
+            <p class="color-description">
+                This red is what we use for alerts/notifiers where the user should take 
+                action. Some buttons will also have this color (read more in buttons). 
+                We call it <code>$cinnabar-red</code>.
+            </p>
+        </div>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#f4842e</div>
+            <p class="color-description">
+                This pretty orange is only used for alerts/notifiers 
+                with second priority, e.g. a label saying "New". We call it 
+                <code>$jaffa-orange</code>.
+            </p>
+        </div>
+
+        <div class="info mt8 clear">
+            <div class="js-color-block color-block mb4">#fff9c4</div>
+            <p class="color-description">
+                This post-it light yellow is used for background color in information 
+                panels. We call it <code>$lemon-chiffon-yellow</code>. The accent color 
+                is called <code>$paris-daisy-yellow</code>.
+            </p>
+        </div>
+
+        <div class="clear"></div>
+
+    </div>
+
+    <script type="text/javascript" src="loadMenu.js"></script>
+    <script type="text/javascript">
+    var colorBlocks = document.getElementsByClassName('js-color-block');
+
+    function hexToRgb(hex) {
+        var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+        return result ? {
+            r: parseInt(result[1], 16),
+            g: parseInt(result[2], 16),
+            b: parseInt(result[3], 16)
+        } : null;
+    }
+
+    for (var i = 0; i < colorBlocks.length; i++) {
+        var hexColor = colorBlocks[i].innerHTML;
+
+        colorBlocks[i].style.background = hexColor;
+        var clr = hexToRgb(hexColor);
+
+        var rgbAvg = (clr.r + clr.g + clr.b) / 3;
+        var limit = 150;
+
+        if (rgbAvg < limit) {
+            colorBlocks[i].classList.add('color-block--invert');
+        }
+    };
+
+    </script>
+
+</body>
+</html>

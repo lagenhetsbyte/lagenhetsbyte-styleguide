@@ -1,0 +1,59 @@
+@import 
+    'typography',
+    'colors',
+    'buttons',
+    'helpers';
+
+body { 
+    background: $alto-grey;
+    color: $mine-shaft-black;
+    margin: 0;
+}
+h1 { 
+    margin: 0; 
+    letter-spacing: -0.4px;
+}
+h2, h3 { 
+    margin: 0; 
+    letter-spacing: -0.25px;
+}
+p { line-height: 135% }
+li { line-height: 140% }
+code { 
+    background: $alto-grey;
+    padding: 0.15rem 0.35rem;
+}
+
+.main {
+    background: #fff;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+}
+.panel { 
+    @extend .main;
+    background: $lemon-chiffon-yellow; 
+    margin-top: 1rem;
+    padding: 1.5rem 1.5rem 0.6rem 1.5rem;
+}
+
+.color-block {
+    float: left;
+    font-family: 'Courier New', 'Lucida Console';
+    font-size: .8rem;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    width: 100px;
+}
+.color-description {
+    float: left;
+    margin-left: 1rem;
+    width: 80%;
+}
+.color-block--invert {
+    color: #fff;
+}

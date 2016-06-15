@@ -1,2 +1,165 @@
-@import url(https://fonts.googleapis.com/css?family=Droid+Sans);body{font-family:'Droid Sans'}.button{-webkit-appearance:none;border-radius:5px;border-style:solid;border-width:1px;border-bottom-width:4px;box-sizing:border-box;color:#FFF;cursor:pointer;display:inline-block;font-family:inherit;font-size:1rem;font-weight:400;margin:.5rem auto;padding:.7rem 1.8rem;text-decoration:none;transition:.15s ease-in-out}.button--green{background:#66bb6a;border-color:rgba(0,0,0,0.1);border-bottom-color:rgba(0,0,0,0.15)}.button--green:hover{background:#4ba84f}.button--blue{background:#2196d8;border-color:rgba(0,0,0,0.1);border-bottom-color:rgba(0,0,0,0.15)}.button--blue:hover{background:#1c80b9}.button--white{background:#f8f8f8;border-color:#888;border-bottom-color:lighter(#888, 10%);color:#777;text-shadow:none}.button--white:hover{border-color:#444;color:#444}.button--red{background:#ea4335;border-color:rgba(0,0,0,0.1);border-bottom-color:rgba(0,0,0,0.15)}.button--red:hover{background:#d62516}.button--medium{font-size:90%;letter-spacing:.2px;padding:.5rem 1.1rem}.button--small{font-size:80%;letter-spacing:.1px;padding:.4rem .8rem}.button[disabled],.button.disabled{cursor:default;opacity:0.5;pointer-events:none}.clear{clear:both}.float-left{float:left}.float-right{float:right}.mb4{margin-bottom:1rem}.mb8{margin-bottom:2rem}.mt4{margin-top:1rem}.mt8{margin-top:2rem}body{background:#ddd;color:#222;margin:0}h1{margin:0;letter-spacing:-0.4px}h2,h3{margin:0;letter-spacing:-0.25px}p{line-height:135%}li{line-height:140%}code{background:#ddd;padding:0.15rem 0.35rem}.main,.panel{background:#fff;box-sizing:border-box;display:block;margin:0 auto;max-width:800px;padding:1.2rem 1.5rem 1.5rem 1.5rem}.panel{background:#fff9c4;margin-top:1rem;padding:1.5rem 1.5rem 0.6rem 1.5rem}.color-block{float:left;font-family:'Courier New', 'Lucida Console';font-size:.8rem;font-weight:bold;height:100px;line-height:100px;text-align:center;width:100px}.color-description{float:left;margin-left:1rem;width:80%}.color-block--invert{color:#fff}
-/*# sourceMappingURL=style.css.map */
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+body {
+  font-family: 'Droid Sans'; }
+
+h1 {
+  margin: 0;
+  letter-spacing: -0.3px; }
+
+h2, h3 {
+  margin: 0;
+  letter-spacing: -0.2px; }
+
+p {
+  line-height: 135%; }
+
+/* --- Chirag Color Name Convention --- */
+/* Greys */
+/* Blues */
+/* Greens */
+/* Reds Yellows */
+a:link, a:visited {
+  color: #2196d8; }
+
+.button {
+  -webkit-appearance: none;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 4px;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: .5rem auto;
+  padding: .7rem 1.8rem;
+  text-decoration: none;
+  transition: .15s ease-in-out; }
+
+.button--green {
+  background: #66bb6a;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.15); }
+  .button--green:hover {
+    background: #4ba84f; }
+
+.button--blue {
+  background: #2196d8;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.15); }
+  .button--blue:hover {
+    background: #1c80b9; }
+
+.button--white {
+  background: #f8f8f8;
+  border-color: #888;
+  border-bottom-color: lighter(#888, 10%);
+  color: #777;
+  text-shadow: none; }
+  .button--white:hover {
+    border-color: #444;
+    color: #444; }
+
+.button--red {
+  background: #ea4335;
+  border-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.15); }
+  .button--red:hover {
+    background: #d62516; }
+
+.button--medium {
+  font-size: 90%;
+  letter-spacing: .2px;
+  padding: .5rem 1.1rem; }
+
+.button--small {
+  font-size: 80%;
+  letter-spacing: .1px;
+  padding: .4rem .8rem; }
+
+.button[disabled],
+.button.disabled {
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none; }
+
+/* Helpers */
+.clear {
+  clear: both; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+.mb4 {
+  margin-bottom: 1rem; }
+
+.mb8 {
+  margin-bottom: 2rem; }
+
+.mt4 {
+  margin-top: 1rem; }
+
+.mt8 {
+  margin-top: 2rem; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #ddd;
+  color: #222;
+  margin: 0; }
+
+li {
+  line-height: 140%; }
+
+code {
+  background: #ddd;
+  padding: 0.15rem 0.35rem; }
+
+nav {
+  background: #fff;
+  float: left;
+  line-height: 140%;
+  margin-right: 5%;
+  padding: 1rem;
+  width: 20%; }
+  nav a:after {
+    content: '';
+    display: table; }
+
+.main, .panel {
+  background: #fff;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 1.2rem 1.5rem 1.5rem 1.5rem; }
+
+.panel {
+  background: #fff9c4;
+  margin-top: 1rem;
+  padding: 1.5rem 1.5rem 0.6rem 1.5rem; }
+
+.color-block {
+  float: left;
+  font-family: 'Courier New', 'Lucida Console';
+  font-size: .8rem;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px; }
+
+.color-description {
+  float: left;
+  margin-left: 1rem;
+  width: 80%; }
+
+.color-block--invert {
+  color: #fff; }

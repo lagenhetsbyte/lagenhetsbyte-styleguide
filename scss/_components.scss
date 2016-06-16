@@ -1,6 +1,6 @@
 nav {
     background: $devils-grey;
-    color: #fff;
+    color: #bae5f8; /* Not part of the official color palette */
     float: left;
     height: 100vh;
     line-height: 140%;
@@ -10,7 +10,7 @@ nav {
         text-decoration: none;
     }
     a:hover {
-        border-bottom: 1px solid $boulder-grey;
+        border-bottom: 1px solid $eightball-grey;
     }
     a:after {
         content: '';

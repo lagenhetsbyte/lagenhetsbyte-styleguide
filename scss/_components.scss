@@ -1,12 +1,13 @@
 nav {
     background: $devils-grey;
-    color: #bae5f8; /* Not part of the official color palette */
+    color: #fff;
     float: left;
     height: 100vh;
     line-height: 140%;
     padding: 1rem;
     width: 280px;
-    a {
+    a:link, a:visited {
+        color: #bae5f8; /* Not part of the official color palette */
         text-decoration: none;
     }
     a:hover {

@@ -17,25 +17,26 @@
 
         <h2>Example</h2>
         <p>
-            Please find below an example styling snippet.
+            Please consider this example below.
         </p>
 
-<pre><code class="code-block">
-        .class {
-    background: $color;
+<pre><code>.some-class {
+    color: $color;
     font-family: $font;
-    line-height: 140%;
-    margin: 5%;
     padding: 1rem;
     width: (100% / 3);
-}
-        </code></pre>
+    &:hover {
+        color: darken($color, 5%);
+    }
+}</code></pre>
 
         <h2>Do:</h2>
         <ul>
             <li>Place css declarations in alphabetical order. This is to easily find what you are looking for, and to eliminate the risk of duplication.</li>
-            <li>Use so called ”egyptian brackets”.</li>
+            <li>Use variables as much as possible.</li>
+            <li>Wrap inside of so called ”egyptian brackets”.</li>
             <li>Indent by 4 spaces.</li>
+            <li>Arrange pseudo classes like above.</li>
         </ul>
 
         <h2>Nesting</h2>

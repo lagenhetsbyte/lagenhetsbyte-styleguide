@@ -7,9 +7,13 @@ body {
     margin: 0;
 }
 code { 
-    background: $alto-grey;
+    background: $silver-grey-c;
     padding: 0.15rem 0.35rem;
 }
-pre {
+pre > code {
+    background: $alto-grey;
+    border-left: 6px solid $jaffa-orange;
+    padding: .8rem 1rem;
+    display: block;
     word-wrap: normal;
 }

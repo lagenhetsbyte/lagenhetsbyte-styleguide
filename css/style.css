@@ -16,10 +16,14 @@ body {
   margin: 0; }
 
 code {
-  background: #ddd;
+  background: #ccc;
   padding: 0.15rem 0.35rem; }
 
-pre {
+pre > code {
+  background: #ddd;
+  border-left: 6px solid #f4842e;
+  padding: .8rem 1rem;
+  display: block;
   word-wrap: normal; }
 
 nav {

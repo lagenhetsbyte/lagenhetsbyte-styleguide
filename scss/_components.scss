@@ -1,10 +1,12 @@
+$navWidth: 30%;
 nav {
-    background: #fff;
+    background: $devils-grey;
+    color: #fff;
     float: left;
+    height: 100vh;
     line-height: 140%;
-    margin-right: 5%;
     padding: 1rem;
-    width: 20%;
+    width: $navWidth;
     a {
         text-decoration: none;
     }
@@ -23,8 +25,10 @@ nav {
 .main {
     background: #fff;
     float: left;
-    width: 50%;
-    padding: 1.2rem 1.5rem 1.5rem 1.5rem;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 2rem 3.5rem;
+    width: (100% - $navWidth);
 }
 
 .panel { 

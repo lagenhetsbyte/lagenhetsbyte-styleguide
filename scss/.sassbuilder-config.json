@@ -1,11 +1,11 @@
 {
 	"project_path": "",
-	"output_path": "",
+	"output_path": "../css",
 	"options": {
 		"cache":         true,
 		"debug":         true,
-		"line-comments": true,
-		"line-numbers":  true,
-		"style":         "nested"
+		"line-comments": false,
+		"line-numbers":  false,
+		"style":         "compressed"
 	}
 }

@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic);
 
 body { 
     font-family: 'Droid Sans';
@@ -8,4 +9,8 @@ p {
 }
 strong {
     font-weight: 700;
+}
+i {
+    font-family: 'Droid Serif';
+    font-weight: italic;
 }

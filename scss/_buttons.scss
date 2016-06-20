@@ -33,14 +33,13 @@
     }
 }
 .button--white {
-    background: #f8f8f8;
-    border-color: $eightball-grey;
-    border-bottom-color: lighter($eightball-grey, 10%);
-    color: $boulder-grey;
+    background: #fff;
+    border-color: $silver-grey-c;
+    border-bottom-color: lighter($silver-grey-c, 10%);
+    color: inherit;
     text-shadow: none;
     &:hover {
-        border-color: $tundora-grey;
-        color: $tundora-grey;
+        border-color: $boulder-grey;
     }
 }
 .button--red {

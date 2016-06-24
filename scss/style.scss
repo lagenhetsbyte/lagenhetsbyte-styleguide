@@ -1,15 +1,14 @@
 @import 
     'colors',
     'global',
-    'components',
+    'helpers',
     'typography',
     'buttons',
-    'helpers';
+    'components';
 
 ol, ul, li { 
     line-height: 150%;
 }
-
 .color-block {
     float: left;
     font-family: 'Courier New', 'Lucida Console';

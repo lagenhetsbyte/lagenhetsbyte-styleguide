@@ -33,42 +33,27 @@ pre > code {
 .code--incorrect {
   border-left: 6px solid #ea4335; }
 
-nav {
-  background: #666;
-  color: #fff;
-  float: left;
-  height: 100vh;
-  line-height: 140%;
-  padding: 1rem;
-  width: 280px; }
-  nav a:link, nav a:visited {
-    color: #bae5f8;
-    /* Not part of the official color palette */
-    text-decoration: none; }
-  nav a:hover {
-    border-bottom: 1px solid #888; }
-  nav a:after {
-    content: '';
-    display: table; }
-  nav h1, nav h2, nav h3 {
-    font-size: 1.2rem; }
+/* Helpers */
+.clear {
+  clear: both; }
 
-.main {
-  background: #fff;
-  float: left;
-  height: 100vh;
-  overflow-y: scroll;
-  padding: 2rem 3.5rem;
-  width: calc(100% - 280px); }
+.float-left {
+  float: left; }
 
-.panel {
-  background: #fff8b8;
-  padding: 1.5rem 1.5rem 0.6rem 1.5rem; }
-  .panel h1, .panel h2, .panel h3 {
-    font-size: 1.3rem;
-    margin-top: 0; }
-  .panel p {
-    font-size: .9rem; }
+.float-right {
+  float: right; }
+
+.mb4 {
+  margin-bottom: 1rem; }
+
+.mb8 {
+  margin-bottom: 2rem; }
+
+.mt4 {
+  margin-top: 1rem; }
+
+.mt8 {
+  margin-top: 2rem; }
 
 body {
   font-family: 'Droid Sans'; }
@@ -147,27 +132,42 @@ i {
   opacity: 0.5;
   pointer-events: none; }
 
-/* Helpers */
-.clear {
-  clear: both; }
+nav {
+  background: #666;
+  color: #fff;
+  float: left;
+  height: 100vh;
+  line-height: 140%;
+  padding: 1rem;
+  width: 280px; }
+  nav a:link, nav a:visited {
+    color: #bae5f8;
+    /* Not part of the official color palette */
+    text-decoration: none; }
+  nav a:hover {
+    border-bottom: 1px solid #888; }
+  nav a:after {
+    content: '';
+    display: table; }
+  nav h1, nav h2, nav h3 {
+    font-size: 1.2rem; }
 
-.float-left {
-  float: left; }
+.main {
+  background: #fff;
+  float: left;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 2rem 3.5rem;
+  width: calc(100% - 280px); }
 
-.float-right {
-  float: right; }
-
-.mb4 {
-  margin-bottom: 1rem; }
-
-.mb8 {
-  margin-bottom: 2rem; }
-
-.mt4 {
-  margin-top: 1rem; }
-
-.mt8 {
-  margin-top: 2rem; }
+.panel {
+  background: #fff8b8;
+  padding: 1.5rem 1.5rem 0.6rem 1.5rem; }
+  .panel h1, .panel h2, .panel h3 {
+    font-size: 1.3rem;
+    margin-top: 0; }
+  .panel p {
+    font-size: .9rem; }
 
 ol, ul, li {
   line-height: 150%; }

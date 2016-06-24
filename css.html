@@ -11,14 +11,46 @@
 
     <div class="main">
 
-        <h1>Syntax and Format</h1>
+        <h1>Syntax</h1>
         <p>
             Scss preprocessor, bla bla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sit distinctio possimus dignissimos accusamus aspernatur cum illum asperiores eos expedita consequuntur, quis suscipit quos quam.
         </p>
 
-        <h2>Example</h2>
+        <h2>Class Naming Convention</h2>
         <p>
-            Please consider this example:
+            Write lower case, using dashes.
+        </p>
+
+        <p>
+            Correct:
+        </p>
+<pre><code class="code--correct">.some-class
+</code></pre>
+
+        <p>
+            Incorrect:
+        </p>
+<pre><code class="code--incorrect">.someClass
+.some_class
+.someclass
+.SomeClass
+</code></pre>
+
+
+        <h2>Declarations</h2>
+        <ul>
+            <li>
+                Place Scss/css declarations in alphabetical order. This is to easily 
+                find what you are looking for, and to eliminate the risk of 
+                duplication.
+            </li>
+            <li>Use variables as much as possible.</li>
+            <li>Wrap inside of so called ”egyptian brackets”.</li>
+            <li>Indent by 4 spaces.</li>
+            <li>Arrange pseudo classes like below.</li>
+        </ul>
+        <p>
+            As shown in this example:
         </p>
 
 <pre><code>.some-class {
@@ -30,19 +62,6 @@
         color: darken($color, 5%);
     }
 }</code></pre>
-
-        <h2>Please note:</h2>
-        <ul>
-            <li>
-                Place Scss/css declarations in alphabetical order. This is to easily 
-                find what you are looking for, and to eliminate the risk of 
-                duplication.
-            </li>
-            <li>Use variables as much as possible.</li>
-            <li>Wrap inside of so called ”egyptian brackets”.</li>
-            <li>Indent by 4 spaces.</li>
-            <li>Arrange pseudo classes like above.</li>
-        </ul>
 
         <h2>Nesting</h2>
         <p>

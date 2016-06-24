@@ -17,3 +17,9 @@ pre > code {
     display: block;
     word-wrap: normal;
 }
+.code--correct {
+    border-left: 6px solid $fern-green;
+}
+.code--incorrect {
+    border-left: 6px solid $cinnabar-red;
+}

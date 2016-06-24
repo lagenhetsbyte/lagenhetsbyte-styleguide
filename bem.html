@@ -11,10 +11,74 @@
 
     <div class="main">
 
-        <h1>BEM – Block, Element, Modifier</h1>
+        <h2>BEM</h2>
         <p>
-            Scss preprocessor, bla bla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi sit distinctio possimus dignissimos accusamus aspernatur cum illum asperiores eos expedita consequuntur, quis suscipit quos quam.
+            In large, complex and long-term projects, organizing your 
+            code is the key to efficiency. No matter which methodology you 
+            choose, you will get advantages of structured CSS.
         </p>
+        <p>
+            Lägenhetsbyte.se is using BEM; it's clear, provides a good architecture 
+            and has recognizable terminology. BEM is the abbreviation of the key 
+            elements of the methodology — Block, Element and Modifier.
+        </p>
+        <ul>
+            <li>Block &rarr; stand-alone entity, and is meaningful on its own.</li>
+            <li>Element &rarr; is part of a block, always tied to the block.</li>
+            <li>Modifier &rarr; changes appearance or behavior on a block or element.</li>
+        </ul>
+
+        <h2>Example</h2>
+        <p>
+            Let's say we want to display some user data. We'll need to create a 
+            user component; a <strong>block</strong>. In this block we'll print 
+            a name and a description. These will be <strong>elements</strong>, 
+            always children of the user component. Also, there will be a list 
+            of user data. This kind of list also appears elsewhere, it's not unique 
+            for this particular user component. So it's a <strong>block</strong>. 
+            In the list, there are some list items (<strong>elements</strong>). 
+            One of these items is special: maybe it has a certain color, or a 
+            different font size. That would count as a <strong>modifier</strong>.
+        </p>
+
+<pre><code>&lt;div class="user"&gt;
+    &lt;h1 class="user__name"&gt;&lt;/h1&gt;
+    &lt;p class="user__description"&gt;&lt;/p&gt;
+    &lt;ul class="list"&gt;
+        &lt;li class="list__list-item"&gt;&lt;/li&gt;
+        &lt;li class="list__list-item"&gt;&lt;/li&gt;
+        &lt;li class="list__list-item list__list-item--special"&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+
+        <p>
+            Now, let's assume we must (for whatever the reason) wrap the 
+            name in a div. What shall we call it? <code>.user__name--container</code>?
+            No, instead try to think of each block as a mini-DOM in its own right,
+            with a <strong>header</strong>, a <strong>body</strong>, and a 
+            <strong>footer</strong>: 
+        </p>
+
+<pre><code>...
+&lt;div class="user__header"&gt;
+    &lt;h1 class="user__name"&gt;&lt;/h1&gt;
+&lt;/div&gt;
+...
+</code></pre>
+
+        <div class="panel mt8">
+            <h2>Please note:</h2>
+            <p>
+                The element <code>.user__name</code> is first and foremost a 
+                child of <code>.user</code>, not <code>.user__header</code>. 
+                Do not name it <code>.user__header__name</code>. 
+            </p>
+            <p>
+                The <code>.user__description</code> and the <code>.list</code> 
+                could, if there was a need for it, be wrapped in <code>.user__body</code>.
+            </p>
+        </div>
 
         <div class="clear"></div>
 

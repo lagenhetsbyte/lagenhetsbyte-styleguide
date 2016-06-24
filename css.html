@@ -24,18 +24,29 @@
         <p>
             Correct:
         </p>
-<pre><code class="code--correct">.some-class
+<pre><code class="code--correct">.some-class {}
 </code></pre>
 
         <p>
             Incorrect:
         </p>
-<pre><code class="code--incorrect">.someClass
-.some_class
-.someclass
-.SomeClass
+<pre><code class="code--incorrect">.someClass {}
+.some_class {}
+.someclass {}
+.SomeClass {}
 </code></pre>
 
+        <h2>Class Pre-fixing</h2>
+        <ul>
+            <li>
+                <code>.js-</code> when hooking to a Javascript function. 
+                Do not apply style to a class prefixed with <code>.js-</code>.
+            </li>
+            <li>
+                <code>.is-</code> for stateful classes (often toggled), 
+                for example <code>.is-hidden</code>.
+            </li>
+        </ul>
 
         <h2>Declarations</h2>
         <ul>
@@ -65,11 +76,23 @@
 
         <h2>Nesting</h2>
         <p>
-            Nesting is an expensive operation. Always try to find a direct selector. 
-            The class name <code>.some-list__item</code> is always to prefer instead 
-            of: <code>.some-list > div + ul li</code>. Read more in the 
-            <a href="bem.html">BEM section</a>.
+            Do not nest, it's an expensive operation. Always try to find a 
+            direct selector. Read more in the <a href="bem.html">BEM section</a>.
         </p>
+
+        <p>Correct:</p>
+
+<pre><code class="code--correct">.some-list {}
+.some-list__item {}</code></pre>
+
+        <p>Incorrect:</p>
+
+<pre><code class="code--incorrect">.some-list > div {
+    ul {
+        li.item {
+        }
+    }
+}</code></pre>
 
         <h2>Output</h2>
         <p>

@@ -68,17 +68,19 @@
         <ul>
             <li>To view multiple source windows side-by-side or using a side-by-side 
                 diff viewer.</li>
-            <li>To improve readability. Narrow code can be read quickly without having 
-                to scan your eyes from side to side.</li>
+            <li>To improve readability. Narrow code can be read quickly without 
+                having to scan your eyes from side to side.</li>
         </ul>
 
         <p>
-            Please note: When a statement will not fit on a single line, it may 
-            be necessary to break it. Place the break after an operator, ideally 
-            after a comma. A break after an operator decreases the likelihood 
-            that a copy-paste error will be masked by semicolon insertion. The 
-            next line should be indented 8 spaces.
+            Please note: When a statement or element will not fit on a single 
+            line, it may be necessary to break it. Place the break after an 
+            operator or attribute, ideally after a comma (if there is one). 
+            The following line/lines should be indented.
         </p>
+
+<pre><code>&lt;input type="email" name="email" id="formEmail" class="form__input"
+    placeholder="name@example.com" required autocomplete="email"&gt;</code></pre>
 
         <div class="clear"></div>
 

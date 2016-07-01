@@ -3,10 +3,11 @@
     <title></title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
 </head>
 <body>
 
-    <nav id="nav"></nav>
+    <nav id="nav" w3-include-html="partials/menu.html"></nav>
 
     <div class="main">
 
@@ -21,7 +22,9 @@
 
     </div>
 
-    <script type="text/javascript" src="js/loadMenu.js"></script>
+    <script>
+        w3IncludeHTML();
+    </script>
 
 </body>
 </html>

@@ -16,7 +16,7 @@
     text-decoration: none;
     transition: .15s ease-in-out;
 }
-.button--green {
+.button--cta {
     background: $fern-green;
     border-color: rgba(0,0,0,0.1);
     border-bottom-color: rgba(0,0,0,0.15);
@@ -24,7 +24,7 @@
         background: darken($fern-green, 9%);
     }
 }
-.button--blue {
+.button--default {
     background: $curious-blue;
     border-color: rgba(0,0,0,0.1);
     border-bottom-color: rgba(0,0,0,0.15);
@@ -32,7 +32,7 @@
         background: darken($curious-blue, 7%);
     }
 }
-.button--white {
+.button--secondary {
     background: #fff;
     border-color: $silver-grey-c;
     border-bottom-color: lighter($silver-grey-c, 10%);
@@ -42,7 +42,7 @@
         border-color: $boulder-grey;
     }
 }
-.button--red {
+.button--alert {
     background: $cinnabar-red;
     border-color: rgba(0,0,0,0.1);
     border-bottom-color: rgba(0,0,0,0.15);

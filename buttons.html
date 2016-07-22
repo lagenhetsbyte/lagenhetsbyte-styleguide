@@ -23,56 +23,65 @@
             <h2>Markup</h2>
             <p>
                 Call the button element with <code>&lt;a class="button"&gt;&lt;/a&gt;</code>.<br>
-                Then add the type of button as an additional class: <code>button--blue</code>.<br>
-                The default size is a large button.<br>
-                However, if there is a need to adjust the button size, add class <code>button--medium</code> or <code>button--small</code>.
+                Then select the type of button, and add as an additional class: 
+                <code>&lt;a class="button button--cta"&gt;&lt;/a&gt;</code><br>
             </p>
         </div>
 
         <div class="button-info mt8">
-            <h2>Green buttons</h2>
+            <h3>CTA (green) buttons</h3>
             <p>
-                The cta button. Used for important actions related to our business model.<br>
-                A call to action is a clear direction that encourages the visitor to take a certain action.
+                The <code>button--cta</code> button. Used for important actions built 
+                to support our business model.<br> A cta ("call to action") is a clear 
+                direction that encourages the visitor to take a certain action.
             </p>
-            <a class="button button--green">Lägg in annons</a>
-            <a class="button button--green button--medium">Registrera konto</a>
-            <a class="button button--green button--small">Beställ</a><br>
+            <a class="button button--cta">Lägg in annons</a>
+            <a class="button button--cta button--medium">Registrera konto</a>
+            <a class="button button--cta button--small">Beställ</a><br>
         </div>
 
         <div class="button-info mt8">
-            <h2>Blue buttons</h2>
-            <p>The default button. Used for general actions.</p>
-            <a class="button button--blue">Sök annonser</a>
-            <a class="button button--blue button--medium">Min sida</a>
-            <a class="button button--blue button--small">OK</a><br>
+            <h3>Default (blue) buttons</h3>
+            <p>The <code>button--default</code> button. Used for default actions.</p>
+            <a class="button button--default">Sök annonser</a>
+            <a class="button button--default button--medium">Min sida</a>
+            <a class="button button--default button--small">OK</a><br>
         </div>
 
         <div class="button-info mt8">
-            <h2>White buttons</h2>
-            <p>The not-so-very-important button. Used for secondary actions.</p>
-            <a class="button button--white">Gå tillbaka</a>
-            <a class="button button--white button--medium">Skicka rapport</a>
-            <a class="button button--white button--small">Avbryt</a><br>
+            <h3>Secondary (white) buttons</h3>
+            <p>The <code>button--secondary</code> button. Used for not-so-very-important actions.</p>
+            <a class="button button--secondary">Gå tillbaka</a>
+            <a class="button button--secondary button--medium">Skicka rapport</a>
+            <a class="button button--secondary button--small">Avbryt</a><br>
         </div>
 
         <div class="button-info mt8">
-            <h2>Red buttons</h2>
-            <p>The danger button. Proceed with caution.</p>
-            <a class="button button--red">Ta bort annons</a>
-            <a class="button button--red button--medium">Avsluta medlemskap</a>
-            <a class="button button--red button--small">Blockera</a><br>
+            <h3>Alert (red) buttons</h3>
+            <p>The <code>button--alert</code> button. Proceed with caution.</p>
+            <a class="button button--alert">Ta bort annons</a>
+            <a class="button button--alert button--medium">Avsluta medlemskap</a>
+            <a class="button button--alert button--small">Blockera</a><br>
         </div>
 
         <div class="button-info mt8">
-            <h2>Disabled buttons</h2>
-            <p>Disable buttons by adding class <code>disabled</code>, or by adding HTML attribute <code>disabled</code>.</p>
-            <a class="button button--green" disabled>Lägg in annons</a>
-            <a class="button button--blue" disabled>Sök annonser</a>
+            <h2>Button sizes</h2>
+            <p>
+                The default size is a large button. We also offer medium and small.<br>
+                So, if there is a need to adjust the button size, add as an additional class:
+                <code>&lt;a class="button button--cta button--medium"&gt;&lt;/a&gt;</code><br>
+            </p>
         </div>
 
-        <div class="panel mt8">
+        <div class="panel--info">
             <h2>Please note:</h2>
+            For buttons on mobile devices there is sometimes a need for a button 
+            to be wide, which is why we have included have an option for full device 
+            width. Simply call <code>button-full</code>.
+        </div>
+
+        <div class="button-info mt8">
+            <h2>Buttons with icons</h2>
             <p>
                 Do not use icons inside of buttons. Instead, make an effort to 
                 write clear and unambiguous copy.
@@ -82,6 +91,13 @@
                 between icons and labels, labels always win. The best icon is a 
                 text label.
             </p>
+        </div>
+
+        <div class="button-info mt8">
+            <h2>Disabled buttons</h2>
+            <p>Disable buttons by adding class <code>disabled</code>, or by adding HTML attribute <code>disabled</code>.</p>
+            <a class="button button--cta" disabled>Lägg in annons</a>
+            <a class="button button--default" disabled>Sök annonser</a>
         </div>
 
     </div>

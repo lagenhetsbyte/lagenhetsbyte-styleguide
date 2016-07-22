@@ -32,13 +32,45 @@ nav {
 }
 
 .panel { 
-    background: $buttermilk-yellow; 
-    padding: 1.5rem 1.5rem 0.6rem 1.5rem;
+    background: $foam-blue; 
+    padding: 1rem;
     h1, h2, h3 {
         font-size: 1.3rem;
         margin-top: 0;
     }
     p {
         font-size: .9rem;
+        margin-bottom: 0;
     }
+}
+
+.panel--info { 
+    @extend .panel;
+    background: $buttermilk-yellow; 
+}
+
+code { 
+    background: rgba(0,0,0,.12);
+    padding: 0.15rem 0.35rem;
+}
+
+.code {
+    background: $alto-grey;
+    padding: .8rem 1rem;
+}
+
+pre > code {
+    background: $alto-grey;
+    border-left: 6px solid $jaffa-orange;
+    padding: .8rem 1rem;
+    display: block;
+    word-wrap: normal;
+}
+
+.code--correct {
+    border-left: 6px solid $fern-green;
+}
+
+.code--incorrect {
+    border-left: 6px solid $cinnabar-red;
 }

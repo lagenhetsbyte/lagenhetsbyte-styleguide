@@ -20,18 +20,18 @@
         </p>
 
         <p>
-            Correct:
-        </p>
-<pre><code class="code--correct">.some-class {}
-</code></pre>
-
-        <p>
             Incorrect:
         </p>
 <pre><code class="code--incorrect">.someClass {}
 .some_class {}
 .someclass {}
 .SomeClass {}
+</code></pre>
+
+        <p>
+            Correct:
+        </p>
+<pre><code class="code--correct">.some-class {}
 </code></pre>
 
         <h2>Class Pre-fixing</h2>
@@ -74,23 +74,26 @@
 
         <h2>Nesting</h2>
         <p>
-            Do not nest, it's an expensive operation. Always try to find a 
-            direct selector. Read more in the <a href="bem.html">BEM section</a>.
+            Do not nest, it's an expensive operation and difficult to read. 
+            Always try to find a direct selector. Read more in the 
+            <a href="bem.html">BEM section</a>.
         </p>
-
-        <p>Correct:</p>
-
-<pre><code class="code--correct">.some-list {}
-.some-list__item {}</code></pre>
 
         <p>Incorrect:</p>
 
 <pre><code class="code--incorrect">.some-list > div {
     ul {
         li.item {
+        > span:hover {
+            }
         }
     }
 }</code></pre>
+
+        <p>Correct:</p>
+
+<pre><code class="code--correct">.some-list {}
+.some-list__item {}</code></pre>
 
         <div class="clear"></div>
 

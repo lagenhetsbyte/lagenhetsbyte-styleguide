@@ -13,12 +13,31 @@
 
         <h1>Typography</h1>
         <p>
-            Droid Sans, Google Fonts
+            The main font used is <a href="https://www.google.com/fonts/specimen/Droid+Sans">Droid Sans</a>, 
+            served via Google Fonts. The Droid family of fonts is designed by 
+            Steve Matteson. The Droid fonts provide optimal quality and reading 
+            comfort on a mobile handset. They are optimized for use in application 
+            menus, web browsers and for other screen text.
         </p>
 
+        <h2>Font Family</h2>
         <p>
-            Droid Serif to match for italics
+            The font contains a regular weight (400) and a bold weight (700). 
+            Droid Sans does not offer a weight for italics. When using <code>&lt;i&gt;</code> 
+            markup for italics, the regular font will be mathematically skewed
+            and quite unaesthetic. For this reason we use Droid Serif for italics.
+            This feature is built into the <code>&lt;i&gt;</code> tag in typography.scss.
         </p>
+
+        <p>Incorrect:</p>
+        <div class="code code--incorrect">
+            Pack my box with <i class="faux-italics">five dozen liquor jugs</i>.
+        </div>
+
+        <p>Correct:</p>
+        <div class="code code--correct">
+            Pack my box with <i>five dozen liquor jugs</i>.
+        </div>
 
     </div>
 

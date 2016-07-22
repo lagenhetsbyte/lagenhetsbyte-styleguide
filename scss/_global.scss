@@ -6,20 +6,3 @@ body {
     color: $mine-shaft-black;
     margin: 0;
 }
-code { 
-    background: rgba(0,0,0,.12);
-    padding: 0.15rem 0.35rem;
-}
-pre > code {
-    background: $alto-grey;
-    border-left: 6px solid $jaffa-orange;
-    padding: .8rem 1rem;
-    display: block;
-    word-wrap: normal;
-}
-.code--correct {
-    border-left: 6px solid $fern-green;
-}
-.code--incorrect {
-    border-left: 6px solid $cinnabar-red;
-}

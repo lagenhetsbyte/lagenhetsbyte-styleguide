@@ -32,6 +32,7 @@ nav {
 }
 
 .panel { 
+    @extend .radius;
     background: $foam-blue; 
     padding: 1rem;
     h1, h2, h3 {
@@ -44,6 +45,17 @@ nav {
     }
     ul {
         margin-bottom: 0;
+    }
+}
+
+.panel--alt {
+    @extend .panel;
+    background: darken($foam-blue, 6%);
+    padding: 5px 1px 0 1px;
+    > div {
+        @extend .radius;
+        background: #fff;
+        padding: 1rem 1rem 1.2rem 1rem;
     }
 }
 

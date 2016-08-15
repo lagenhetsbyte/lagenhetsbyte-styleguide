@@ -1,4 +1,8 @@
-.button {
+/* Style */
+
+.button,
+a.button,
+button.button {
     -webkit-appearance: none;
     border-radius: 5px;
     border-style: solid;
@@ -11,28 +15,40 @@
     font-family: inherit;
     font-size: 1rem;
     font-weight: 400;
+    line-height: initial;
     margin: .5rem auto;
     padding: .7rem 1.8rem;
+    text-align: center;
     text-decoration: none;
     transition: .15s ease-in-out;
+    b {
+        color: #FFF;
+    }
 }
-.button--cta {
+.button,
+.button.success,
+.button:focus {
     background: $fern-green;
     border-color: rgba(0,0,0,0.1);
     border-bottom-color: rgba(0,0,0,0.15);
     &:hover {
         background: darken($fern-green, 9%);
+        color: #FFF;
     }
 }
-.button--default {
+.button.secondary,
+.button.secondary:focus {
     background: $curious-blue;
     border-color: rgba(0,0,0,0.1);
     border-bottom-color: rgba(0,0,0,0.15);
+    color: #FFF;
     &:hover {
         background: darken($curious-blue, 7%);
+        color: #FFF;
     }
 }
-.button--secondary {
+.button.neutral,
+.button.neutral:focus {
     background: #fff;
     border-color: $silver-grey-c;
     border-bottom-color: lighter($silver-grey-c, 10%);
@@ -42,7 +58,8 @@
         border-color: $boulder-grey;
     }
 }
-.button--alert {
+.button.alert,
+.button.alert:focus {
     background: $cinnabar-red;
     border-color: rgba(0,0,0,0.1);
     border-bottom-color: rgba(0,0,0,0.15);
@@ -50,16 +67,24 @@
         background: darken($cinnabar-red, 10%);
     }
 }
-.button--medium {
+.button.expand {
+    width: 100%;
+}
+
+/* Sizes */
+
+.button.medium {
     font-size: 90%;
     letter-spacing: .2px;
     padding: .5rem 1.1rem;
 }
-.button--small {
+.button.small {
     font-size: 80%;
     letter-spacing: .1px;
     padding: .4rem .8rem;
 }
+
+/* Disabling */
 
 .button[disabled],
 .button.disabled {

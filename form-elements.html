@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+</head>
+<body>
+
+    <nav id="nav" w3-include-html="partials/menu.html"></nav>
+
+    <div class="main">
+
+        <h1>Form elements</h1>
+        <p>
+            We have decided to not use the standard form elements. Instead, we use our own 
+            elements by applying new base styles on the form elements themselves, or the 
+            label::before and label::after pseudo elements.
+        </p>
+
+        <div class="mt8">
+            <h3>The checkbox</h3>
+
+            <input id="x" type="checkbox" />
+            <label for="x">Checkbox label</label>
+
+            <p>
+                This is the correct markup for the checkbox:
+            </p>
+        </div>
+
+<pre><code>&lt;input id="x" type="checkbox" /&gt;
+&lt;label for="x"&gt;Checkbox label&lt;/label&gt;
+</code></pre>
+
+        <div class="mt8">
+            <h3>The radio button</h3>
+
+            <input id="x" type="radio" />
+            <label for="x">Radio button label</label>
+
+            <p>
+                This is the correct markup for the radio button:
+            </p>
+        </div>
+
+<pre><code>&lt;input id="x" type="radio" /&gt;
+&lt;label for="x"&gt;Radio button label&lt;/label&gt;
+</code></pre>
+
+        <div class="mt8">
+            <h3>The select</h3>
+
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+
+            <p>
+                This is the correct markup for the select:
+            </p>
+        </div>
+
+<pre><code>&lt;select&gt;
+    &lt;option&gt;Option 1&lt;/option&gt;
+    &lt;option&gt;Option 2&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
+
+        <div class="mt8">
+            <h3>The textarea</h3>
+
+            <textarea>Textarea</textarea>
+
+            <p>
+                This is the correct markup for the textarea:
+            </p>
+        </div>
+
+<pre><code>&lt;textarea&gt;
+    Textarea
+&lt;/textarea&gt;
+</code></pre>
+
+
+    </div>
+
+    <script>
+        w3IncludeHTML();
+    </script>
+
+</body>
+</html>

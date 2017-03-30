@@ -55,7 +55,7 @@
             </li>
             <li>Use variables as much as possible.</li>
             <li>Wrap inside of so called ”egyptian brackets”.</li>
-            <li>Indent by 4 spaces.</li>
+            <li>Indent by 2 spaces.</li>
             <li>Arrange pseudo classes like below.</li>
         </ul>
         <p>
@@ -63,13 +63,13 @@
         </p>
 
 <pre><code>.some-class {
-    color: $color;
-    font-family: $font;
-    padding: 1rem;
-    width: (100% / 3);
-    &:hover {
-        color: darken($color, 5%);
-    }
+  color: $color;
+  font-family: $font;
+  padding: $spacing-default;
+
+  &:hover {
+    color: $hover-color;
+  }
 }</code></pre>
 
         <h2>Nesting</h2>
@@ -82,18 +82,25 @@
         <p>Incorrect:</p>
 
 <pre><code class="code--incorrect">.some-list > div {
-    ul {
-        li.item {
-        > span:hover {
-            }
-        }
+  ul {
+    li.item {
+      > span:hover {
+        color: $hover-color;
+      }
     }
+  }
 }</code></pre>
 
         <p>Correct:</p>
 
 <pre><code class="code--correct">.some-list {}
-.some-list__item {}</code></pre>
+.some-list__list-item {}
+
+.some-list {
+  &__list-item {
+    color: $color;
+  }
+}</code></pre>
 
         <div class="clear"></div>
 

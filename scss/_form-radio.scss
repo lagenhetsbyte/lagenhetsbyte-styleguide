@@ -1,0 +1,53 @@
+/* The outer radio */
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+  clip: rect(0,0,0,0);
+  margin: 0;
+  position: absolute;
+}
+
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  cursor: pointer;
+  font-size: .9rem;
+  margin: 0 0 $spacing-default 4px;
+  padding: 4px 0 0 32px;
+  position: relative;
+}
+
+input[type="radio"] + label:before {
+  background-color: $refreshing-grey;
+  border: 1px solid $silver-chalise;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,.2);
+  content: '';
+  height: 24px;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 24px;
+}
+
+input[type="radio"]:disabled + label {
+  color: $silver-grey;
+
+  &:before {
+    border-color: $silver-grey;
+  }
+}
+
+/* The inner radio */
+input[type="radio"]:checked + label:after {
+  background-color: $fern-green;
+  border-radius: 50%;
+  content: '';
+  height: 12px;
+  left: 6px;
+  position: absolute;
+  top: 6px;
+  width: 12px;
+}
+

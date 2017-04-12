@@ -1,29 +1,38 @@
-/* --- Chirag Color Name Convention --- */
+
 /* Greys */
-$mine-shaft-black  : #222;
-$tundora-grey      : #444;
-$devils-grey       : #666;
-$boulder-grey      : #777;
-$eightball-grey    : #888;
-$silver-chalise    : #aaa;
-$silver-grey       : #bbb;
-$silver-grey-c     : #ccc;
-$alto-grey         : #ddd;
-$gallery-grey      : #eee;
+$mine-shaft-black : #222;
+$tundora-grey     : #444;
+$dove-grey        : #666;
+$devils-grey      : $dove-grey;
+$boulder-grey     : #777;
+$eightball-grey   : #888;
+$dusty-grey       : #999;
+$silver-chalise   : #aaa;
+$silver-grey      : #bbb;
+$silver-grey-c    : #ccc;
+$alto-grey        : #ddd;
+$gallery-grey     : #eee;
+$tornado-grey     : #f0f0f0;
+$formula-one-grey : #f1f1f1;
+$refreshing-grey  : #f5f5f5;
+$alabaster-grey   : #f8f8f8;
+
 /* Blues */
-$foam-blue         : #e2f4fc;
-$curious-blue      : #2196d8;
-$tropical-blue     : #c7eaf9;
-$lochmara-blue     : #0176b8;
-$charlotte-blue    : #c3e9f9;
+$foam-blue      : #e2f4fc;
+$curious-blue   : #2196d8;
+$tropical-blue  : #c7eaf9;
+$lochmara-blue  : #0176b8;
+$charlotte-blue : #c3e9f9;
+
 /* Greens */
-$atlantis-green    : #96c424;
-$limeade-green     : #76a404;
-$fruit-salad-green : #4Caf50;
-$fern-green        : #66bb6a;
+$fern-green : #66bb6a;
+
 /* Reds Yellows */
-$jaffa-orange         : #f4842e;
-$cinnabar-red         : #ea4335;
-$lemon-chiffon-yellow : #fff9c4;
-$paris-daisy-yellow   : #fff176;
-$buttermilk-yellow    : #fff8b8;
+$jaffa-orange      : #f4842e;
+$supernova-orange  : #fc0;
+$cinnabar-red      : #ea4335;
+$buttermilk-yellow : #fff8b8;
+$chablis-pink      : #fff0f2;
+
+/**/
+$color-white : #fff;

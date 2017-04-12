@@ -1,0 +1,54 @@
+input[type="checkbox"] {
+  clip: rect(0,0,0,0);
+  margin: 0;
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 0;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+  cursor: pointer;
+  font-size: .9rem;
+  margin: 0 0 $spacing-default 4px;
+  padding: 6px 0 0 32px;
+  position: relative;
+}
+
+input[type="checkbox"]:checked + label {
+  color: $tundora-grey;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  background-color: $color-white;
+  border: 1px solid $silver-chalise;
+  border-radius: 3px;
+  box-shadow: inset 1px 1px 4px rgba(0,0,0,.2);
+  box-sizing: border-box;
+  content: '';
+  height: 24px;
+  left: 0;
+  position: absolute;
+  top: 2px;
+  width: 24px;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  background-image: url('../img/global-sprite.svg#css-checkmark');
+  background-position: 5px 5px;
+  background-repeat: no-repeat;
+  content: '';
+  height: 20px;
+  left: -1px;
+  position: absolute;
+  top: 2px;
+  width: 23px;
+}
+
+input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  transform: scale(0);
+}

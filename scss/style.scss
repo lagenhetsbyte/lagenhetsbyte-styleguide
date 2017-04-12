@@ -1,5 +1,5 @@
 @import 'colors', 'settings', 'base', 'helpers', 'typography', 'buttons', 
-  'components', 'form-checkbox', 'form-radio';
+  'components', 'form-input', 'form-checkbox', 'form-radio';
 
 ol, ul, li { 
   line-height: 150%;
@@ -24,4 +24,8 @@ ol, ul, li {
   float: left;
   margin-left: 1rem;
   width: 80%;
+}
+
+textarea {
+  min-height: 5rem;
 }

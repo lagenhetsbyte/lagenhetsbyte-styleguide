@@ -2,22 +2,27 @@
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic);
 
 body { 
-    font-family: 'Droid Sans';
+  font-family: 'Droid Sans';
 }
+
 h2 {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
+
 p { 
-    line-height: 135% 
+  line-height: 135%;
 }
+
 strong {
-    font-weight: 700;
+  font-weight: 700;
 }
-i {
-    font-family: 'Droid Serif';
-    font-weight: italic;
+
+i, em {
+  font-family: 'Droid Serif';
+  font-weight: italic;
 }
+
 i.faux-italics {
-    font-family: 'Droid Sans';
-    font-weight: italic;
+  font-family: 'Droid Sans';
+  font-weight: italic;
 }

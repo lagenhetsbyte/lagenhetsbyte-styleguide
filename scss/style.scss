@@ -1,29 +1,26 @@
-@import 
-    'colors',
-    'global',
-    'helpers',
-    'typography',
-    'buttons',
-    'components';
+@import 'colors', 'base', 'helpers', 'typography', 'buttons', 'components';
 
 ol, ul, li { 
-    line-height: 150%;
+  line-height: 150%;
 }
+
 .color-block {
-    float: left;
-    font-family: 'Courier New', 'Lucida Console';
-    font-size: .8rem;
-    font-weight: bold;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
-    width: 100px;
+  float: left;
+  font-family: 'Courier New', 'Lucida Console';
+  font-size: .8rem;
+  font-weight: bold;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  width: 100px;
 }
+
 .color-block--invert {
-    color: #fff;
+  color: #fff;
 }
+
 .color-description {
-    float: left;
-    margin-left: 1rem;
-    width: 80%;
+  float: left;
+  margin-left: 1rem;
+  width: 80%;
 }

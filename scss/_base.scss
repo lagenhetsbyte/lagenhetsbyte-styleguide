@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body { 
+  background-color: $alto-grey;
+  color: $mine-shaft-black;
+  margin: 0;
+}
+
+a {
+  color: $curious-blue;
+  text-decoration: none;
+
+  &:link, &:visited {
+    color: $curious-blue;
+  }
+}
+
+a.subtle-link {
+  color: $devils-grey;
+  text-decoration: underline;
+
+   &:link, &:visited {
+    color: $devils-grey;
+  }
+}

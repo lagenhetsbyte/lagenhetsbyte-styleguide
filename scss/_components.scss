@@ -1,91 +1,99 @@
 nav {
-    background: $devils-grey;
-    color: #fff;
-    float: left;
-    height: 100vh;
-    line-height: 140%;
-    padding: 1rem;
-    width: 280px;
-    a:link, a:visited {
-        color: #bae5f8; /* Not part of the official color palette */
-        text-decoration: none;
-    }
-    a:hover {
-        border-bottom: 1px solid $eightball-grey;
-    }
-    a:after {
-        content: '';
-        display: table;
-    }
-    h1, h2, h3 {
-        font-size: 1.2rem;
-    }
+  background-color: $devils-grey;
+  color: #fff;
+  float: left;
+  height: 100vh;
+  line-height: 140%;
+  padding: 1rem;
+  width: 280px;
+
+  a:link, a:visited {
+    color: #bae5f8; /* Not part of the official color palette */
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: 1px solid $eightball-grey;
+  }
+
+  a:after {
+    content: '';
+    display: table;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.2rem;
+  }
 }
 
 .main {
-    background: #fff;
-    float: left;
-    height: 100vh;
-    overflow-y: scroll;
-    padding: 2rem 3.5rem;
-    width: calc(100% - 280px);
+  background-color: #fff;
+  float: left;
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 2rem 3.5rem;
+  width: calc(100% - 280px);
 }
 
 .panel { 
-    @extend .radius;
-    background: $foam-blue; 
-    padding: 1rem;
-    h1, h2, h3 {
-        font-size: 1.3rem;
-        margin-top: 0;
-    }
-    p {
-        font-size: .9rem;
-        margin-bottom: 0;
-    }
-    ul {
-        margin-bottom: 0;
-    }
+  @extend .radius;
+  background-color: $foam-blue; 
+  padding: 1rem;
+
+  h1, h2, h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: .9rem;
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
 }
 
 .panel--alt {
-    @extend .panel;
-    background: darken($foam-blue, 6%);
-    padding: 5px 1px 0 1px;
-    > div {
-        @extend .radius;
-        background: #fff;
-        padding: 1rem 1rem 1.2rem 1rem;
-    }
+  @extend .panel;
+  background: darken($foam-blue, 6%);
+  padding: 5px 1px 0 1px;
+
+  > div {
+    @extend .radius;
+    background-color: #fff;
+    padding: 1rem 1rem 1.2rem 1rem;
+  }
 }
 
 .panel--info { 
-    @extend .panel;
-    background: $buttermilk-yellow; 
+  @extend .panel;
+  background-color: $buttermilk-yellow; 
 }
 
 code { 
-    background: rgba(0,0,0,.12);
-    padding: 0.15rem 0.35rem;
+  background-color: rgba(0,0,0,.12);
+  padding: 0.15rem 0.35rem;
 }
 
 .code {
-    background: $alto-grey;
-    padding: .8rem 1rem;
+  background-color: $alto-grey;
+  padding: .8rem 1rem;
 }
 
 pre > code {
-    background: $alto-grey;
-    border-left: 6px solid $jaffa-orange;
-    padding: .8rem 1rem;
-    display: block;
-    word-wrap: normal;
+  background-color: $alto-grey;
+  border-left: 6px solid $jaffa-orange;
+  display: block;
+  padding: .8rem 1rem;
+  word-wrap: normal;
 }
 
 .code--correct {
-    border-left: 6px solid $fern-green;
+  border-left: 6px solid $fern-green;
 }
 
 .code--incorrect {
-    border-left: 6px solid $cinnabar-red;
+  border-left: 6px solid $cinnabar-red;
 }
